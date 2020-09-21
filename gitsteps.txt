@@ -1,0 +1,7 @@
+1. Fork
+2. Open Git-Bash
+3. Create Project Directory
+4. mkdir .git/
+5. git init
+6. git clone "url"
+7. git status (make sure everything worked)
