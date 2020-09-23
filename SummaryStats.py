@@ -6,24 +6,7 @@
 
 """1. This project is designed to take in a CSV file of numeric data and output it with certain statistical summaries. The format matches the preferred style of the Clinical Addictions
 Research Lab at UChicago. I created an object that takes in a dataframe and can split it by Active and Control groups, run the stats and put them in their proper place, and export the data.
-
-2. I selected this project because it would be helpful for our lab. Takes much less time and can be more reliable than human error working on Excel. I also realized I was incompetent working with Pandas 
-and dataframes in Python, so this was a good learning opportunity.
-
-3. The use of Pandas and math were both important. Pandas provides a nice way to work with Dataframes, and math allowed for necessary statistical computations. 
-I also took advantage of comprehensions, f strings, and object creation.
-
-4. What I would have done differently is require user inputs when running the class CARLData. I relied on inputs from the user many times, which could be made more effecient by requiring inputs on the front end.
-In addition, I would have given myself more time for customizability. For example, the object is restricted to binary splits (i.e. active and control). It would be cool to allow for many splits.
-
-5. Upload the Affect CSV as a pd df. create an object using CARLData. Use the methods of the object to produce the stats. Use comments as a guide. 
-
-6. The project was challenging, yes. I did not know what to expect, but manipulating rows and indexing was the biggest learning curve. Overall, it was a fun challenge.
-
-7. I referred to the Pandas module documentation quite a bit. Other than that, I cited a few sources within the code comments.
-
-8. I am not sure if this work qualifies for EC. perhaps some of the indexing techniques stand out."""
-
+"""
 
 
 import pandas as pd
