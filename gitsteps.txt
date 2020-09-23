@@ -1,0 +1,36 @@
+COMMANDS
+
+pwd    (print working directory)  shows you which directory you're in
+ls      (lists everything in the directory)
+ls -as (lists everything in the directory including "hidden" folders)
+cd ..   ( move up 1 directory)
+cd ~   (go back to home directory)
+cd insertfoldername   (move into this directory)
+
+you have to be in a directory 1 step away from the directory you're moving into
+
+Always start work by cloning most recent version of the repository
+
+PULLING IN FROM GITHUB
+1. Fork
+2. Open Git-Bash
+3. Create Project Directory
+4. mkdir .git/
+5. git init
+6. git clone "url"
+7. git status (make sure everything worked)
+
+EDITING
+8. make any and all changes, add files, code, whatever you want in the project folder
+
+PUSH BACK
+9. git add "file.extension" "blablabla.py" "blablabla.png" (this makes git track the changes you make to these files and
+include them in the git flow process. Adding all of the files sends them to "staging", where they all can be committed at once)
+10. git commit (git's understanding of your project is now fully up to date)
+11. git push origin master (this sends your project back to YOUR github repository. origin tells git to push to the original link you
+copy/pasted, master tells git that your version changes are being applied to the "master" branch as opposed to any other version you may
+have in your repository)
+
+PULL REQUEST
+12. On github.com, create a new pull request to the original repository. When accepted your changes are applied to the original repository
+
