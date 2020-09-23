@@ -1,3 +1,4 @@
+
 """
 A program for research at the University of Chicago: Data Formatting, visualization, & summarization for numeric data.
 The main.py file creates the user interface for the program.
@@ -9,12 +10,23 @@ import sys
 from PackageImports import *
 
 
+
+from PyQt5 import QtWidgets, QtMultimediaWidgets, QtMultimedia, QtCore, QtGui, Qt
+from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton, QLineEdit, QComboBox
+import sys, random
+
+""" 
+A program for research at the University of Chicago: Data Formatting, visualization, & summarization for numeric data.
+"""
+
+
 class UCAnalysisGUI(QMainWindow):
     def __init__(self):
         """The __init__ method of UCAnalysisGUI class prepares GUI by inheriting QMainWindow from PyQt5. It adds meta
         information, defines screen size & placement and calls the sub-methods responsible for populating the GUI
         with widgets and widget functionality."""
         super().__init__()
+
         self.setWindowTitle('Data Analysis & Visualization for UC')
 
         # creates a full-screen application with coordinates (0, 0)
@@ -23,6 +35,12 @@ class UCAnalysisGUI(QMainWindow):
         # Call method that adds content to main window
         self.initialize_content()
 
+
+        # creates a full-screen application with coordinates (0, 0)
+        self.setGeometry(0, 0, 1920, 1080)
+        self.setWindowTitle('Data Analysis & Visualization for UC')
+        # Call method that adds content to main window
+        self.initialize_content()
         # Call method that adds interactivity/widget functionality to GUI
         self.initialize_interactive_methods()
 
@@ -37,6 +55,7 @@ class UCAnalysisGUI(QMainWindow):
         self.title.setAlignment(Qt.AlignCenter)
         # Add temporary background colors to labels
         self.title.setStyleSheet('background-color:gray;')
+
 
 
 
@@ -56,4 +75,7 @@ def launch_GUI():
 
 launch_GUI()                                     # Run the program
 
+
+
+launch_GUI()                                     # Run the program
 
