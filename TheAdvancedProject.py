@@ -24,7 +24,8 @@ In addition, I would have given myself more time for customizability. For exampl
 
 8. I am not sure if this work qualifies for EC. perhaps some of the indexing techniques stand out."""
 
-
+#!/usr/bin/env python
+# coding: utf-8
 
 import pandas as pd
 import numpy as np
